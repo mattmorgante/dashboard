@@ -1,0 +1,45 @@
+.row { 
+	height: 350px;
+}
+
+.col-md-6 { 
+	background-color: lightblue;
+	border: 1px solid white;	
+}
+
+#carbon {
+	background-color: #CC8400;
+}
+
+#forest {
+	background-color: #228B22;
+}
+
+#animal { 
+	background-color: red;
+}
+
+#grain { 
+	background-color: yellow;
+}
+
+#economy { 
+	background-color: grey;
+}
+
+.widget { 
+	border: 3px solid white;
+}
+
+.col-md-4 { 
+}
+
+.dates { 
+	text-align: center;
+	height: 80px;
+}
+
+.resources {
+	text-align: center;
+}
+
