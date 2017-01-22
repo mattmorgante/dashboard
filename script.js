@@ -24,15 +24,38 @@ function calculateWater() {
 
 function calculateCarbon() { 
 	var date = calculateDate();
-	var water = (date * 41639);
-	return water;
+	var carbon = (date * 4500);
+	return carbon;
 }
 
+function calculateForest() { 
+	var date = calculateDate();
+	var forest = (date * 27870);
+	return forest;
+}
 
+function calculateLife() {
+	var date = calculateDate();
+	var lives = (date * 1);
+	return lives;
+}
 
-// Takes initial date as parameter, returns an integer 
-// Multiply days by an array of constants, save the result as a dynamic array 
-// Loop through foreach that shows a styled box for each array value 
+function calculateGrain() {
+	var date = calculateDate();
+	var grain = (date * 20411);
+	return grain;
+}
+
+function calculateMoney() {
+	var date = calculateDate();
+	var money = (date * 435);
+	return money;
+}
+
+function counter() { 
 // On document load, script runs that increases each (CONST/86400) seconds
-// Where 86400 is number of seconds in a day  
+
+}
+// Multiply days by an array of constants, save the result as a dynamic array 
+// Loop through foreach that shows a styled box for each array value // Where 86400 is number of seconds in a day  
 
