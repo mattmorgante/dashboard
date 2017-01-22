@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="theme.css"> 
+	<script type="text/javascript" src="script.js"></script>
+	 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	 <script>
+  $( function() { $( "#datepicker" ).datepicker(); } );
+  $( function getStart() { $( "#datepicker" ).datepicker("getDate"); } );
+
+	$( function() { $( "#datepicker-2" ).datepicker(); } );
+  $( function getEnd() { $( "#datepicker-2" ).datepicker("getDate"); } );
+  </script>
+
+
+</head>
+<body>
+	<div class="container-fluid startform">
+
+		<div class="checkbox">
+	    	<label>
+	    		<input type="checkbox"> I am already vegan.
+	    	</label>
+    	</div>
+    	<div class="checkbox">
+	    	<label>
+	    		<input type="checkbox"> I am interested in becoming vegan.
+	    	</label>
+    	</div>
+ 		<button type="button" class="btn btn-primary form-button">Start Date: </button><input type ="text" id ="datepicker"><br><br>
+
+ 		<button type="button" class="btn btn-warning form-button">End Date: </button><input type ="text" id ="datepicker-2"></p>
+	</div>
+</body>

@@ -1,6 +1,10 @@
 // Technical requirements: 
 // Based on input, display two different scenarios  
 // jQuery UI Datepicker 
+// function getStartDate() { 
+// 	var startDate = $( ".selector" ).datepicker( "getDate" );
+// 	return startDate;
+// }
 // Save date as a variable 
 
 // document.querySelector('.days').innerHTML = 'Hello World!';

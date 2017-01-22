@@ -1,3 +1,16 @@
+/* start pages */
+.startform { 
+	text-align: center;
+	width: 100%;
+	padding-top: 10%;
+}
+
+.form-button { 
+	margin: 20px;
+}
+
+/* dashboard */
+
 .row { 
 	height: 350px;
 }
@@ -34,10 +47,6 @@
 .col-md-4 { 
 }
 
-.dates { 
-	text-align: center;
-	height: 80px;
-}
 
 .resources {
 	text-align: center;
