@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Stopwatch</title>
+	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="theme.css"> 
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	<div class="days"><h2># of days = <script>document.write(calculateDate());</script></h2>
+	</div>
 	<div>If you went Vegan for XXX days, you would save this much in resources to the environment.  <br>
 	If you go vegan for XXX days, ...
 
@@ -19,7 +22,8 @@
 	</div>
 	  <div class="row">
 	    <div class="widget col-md-6">
-	      41,639 litres of water per day<br>
+	      <h2><script>document.write(calculateWater()); </script> litres of water per day</h2><br>
+	  
 	      That's as much as XXX comparison <br>
 	      Every week of veganism, you save <br>
 
