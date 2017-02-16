@@ -20,6 +20,13 @@
 // 	// document.getElementById("days").innerHTML = diffDays;
 // }
 
+// UPDATED DATA IMPACT PER DAY 
+// 4163 litres water 
+// 20 kg grain
+// 2.78 sq m OR 27,870 sq cm forest
+// 9 kg or 9071 grams of co2 
+// 1 animal life
+
 document.addEventListener("DOMContentLoaded", function() {
 	init();
 });
