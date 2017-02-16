@@ -3,19 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dashboard</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="theme.css"> 
-	<script type="text/javascript" src="script.js"></script>
-	 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-         rel = "stylesheet">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
 </head>
-<body>
 
-	<div class="days"><h2># of days = <script>document.write(calculateDate());</script></h2>
+<body>
+	<div id="countdown">10</div>
+	<div class="days"><h2># of days = </h2>
 	</div>
 	<div>If you went Vegan for XXX days, you would save this much in resources to the environment.  <br>
 	</div>
@@ -23,7 +16,7 @@
 	<div class="container-fluid">
 	  <div class="row">
 	    <div class="widget col-md-6">
-	      <h2><script>document.write(calculateWater()); </script> liters of water per day</h2><br>
+	      <h2>liters of water per day</h2><br>
 	      Each day saves 41,639 liters of water
 	      That's as much as XXX comparison <br>
 	      Every week of veganism, you save <br>
@@ -31,27 +24,27 @@
 </button>
 	    </div>
 	    <div class="widget col-md-3" id="carbon">
-	    	<h2><script>document.write(calculateCarbon()); </script> grams of Carbon Dioxide (CO2)</h2>
+	    	<h2>grams of Carbon Dioxide (CO2)</h2>
 	      Each day saves 4,500 grams of C02 <br>
 	      That's the same as driving 12 miles in a 35mpg car 
 	    </div>
 	    <div class="widget col-md-3" id="forest">
-	      <h2><script>document.write(calculateForest()); </script> sq cm of forest</h2>
+	      <h2> sq cm of forest</h2>
 	      <br>Each day saves 27870 sq cm of forest <br>
 	      You save a football fields worth of Amazon rainforest in how long? <br>
 	    </div>
 	  </div>
 	  <div class="row">
 	    <div class="widget col-md-4" id="animal">
-	      <h2><script>document.write(calculateLife()); </script> Animal Lives</h2><br>
+	      <h2> Animal Lives</h2><br>
 	      1 Animal life per day
 	    </div>
 	    <div class="widget col-md-4" id="grain">
-	      <h2><script>document.write(calculateGrain()); </script> grams of Grain</h2><br>
+	      <h2> grams of Grain</h2><br>
 	      20,411 grams of grain per day
 	    </div>
 	    <div class="widget col-md-4" id="economy">
-	      <h2><script>document.write(calculateMoney()); </script> Dollars</h2><br>
+	      <h2> Dollars</h2><br>
 	      // To do: Economic externalities of eating meat
 	    </div>
 	  </div>
@@ -61,8 +54,8 @@
 	  </div>
 	</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>

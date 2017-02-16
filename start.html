@@ -8,14 +8,36 @@
 	 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
          rel = "stylesheet">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	 <script>
-  $( function() { $( "#datepicker" ).datepicker(); } );
-  $( function getStart() { $( "#datepicker" ).datepicker("getDate"); } );
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	  	$(function saveStart(){
+		    $('#datepicker').datepicker({
+		    onSelect: function(dateText, inst) {
+		      $("input[name='start']").val(dateText);
+		    	}
+			});
+		});
+		$(function saveEnd(){
+		    $('#datepicker-2').datepicker({
+		    onSelect: function(dateText, inst) {
+		      $("input[name='end']").val(dateText);
+		    	}
+			});
+		});
+	</script>
 
-	$( function() { $( "#datepicker-2" ).datepicker(); } );
-  $( function getEnd() { $( "#datepicker-2" ).datepicker("getDate"); } );
-  </script>
+	<script>
+	// want to send start and end through here, then use it to perform rest of functions
+	function calculateDate () {
+		var oneDay = 24*60*60*1000 // seconds in a day
+		var startDate = ;
+		var endDate = new Date(2017,01,01);
+		var diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime())/(oneDay)));
+		return diffDays; 
+		// document.getElementById("days").innerHTML = diffDays;
+	}
+
+	</script>
 
 
 </head>
@@ -32,8 +54,17 @@
 	    		<input type="checkbox"> I am interested in becoming vegan.
 	    	</label>
     	</div>
- 		<button type="button" class="btn btn-primary form-button">Start Date: </button><input type ="text" id ="datepicker"><br><br>
+ 		<button type="button" class="btn btn-primary form-button">Start Date: </button><input type ="text" id ="datepicker"><br>
 
- 		<button type="button" class="btn btn-warning form-button">End Date: </button><input type ="text" id ="datepicker-2"></p>
+
+ 		<button type="button" class="btn btn-warning form-button">End Date: </button><input type ="text" id ="datepicker-2">
+ 		<br>
+
+ 		<h2> Your start date is <br><input name="start" value="" /></h2>
+ 		<h2> Your end date is <br><input name="end" value="" /></h2>
+
+ 		<br>
+ 		<button type="button" class="btn-lg btn-success">Next ></button>
+
 	</div>
 </body>

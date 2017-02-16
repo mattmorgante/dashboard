@@ -11,14 +11,42 @@
 // document.querySelector('.content .value').innerHTML = 'World!';
 
 // Function to Calculate days since date was picked 
-function calculateDate () {
-	var oneDay = 24*60*60*1000 // seconds in a day
-	var startDate = new Date(2016,01,01);
-	var endDate = new Date(2017,01,01);
-	var diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime())/(oneDay)));
-	return diffDays; 
-	// document.getElementById("days").innerHTML = diffDays;
+// function calculateDate () {
+// 	var oneDay = 24*60*60*1000 // seconds in a day
+// 	var startDate = ;
+// 	var endDate = new Date(2017,01,01);
+// 	var diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime())/(oneDay)));
+// 	return diffDays; 
+// 	// document.getElementById("days").innerHTML = diffDays;
+// }
+
+document.addEventListener("DOMContentLoaded", function() {
+	init();
+});
+
+
+function init(){
+	countdown();
 }
+
+var seconds;
+var temp;
+ 
+function countdown() {
+	seconds = document.getElementById('countdown').innerHTML;
+	seconds = parseInt(seconds, 10);
+
+	if (seconds == 1) {
+	  temp = document.getElementById('countdown');
+	  temp.innerHTML = "all done, bye bye";
+	  return;
+	}
+
+	seconds++;
+	temp = document.getElementById('countdown');
+	temp.innerHTML = seconds;
+	timeoutMyOswego = setTimeout(countdown, 1000);
+} 
 
 function calculateWater() { 
 	var date = calculateDate();
